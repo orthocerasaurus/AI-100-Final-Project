@@ -1,21 +1,14 @@
-# AI-100 Final Project
+# AI Final Project – Debugging AI System
 
-This project is a simple AI question-answering system that uses sentence embeddings to match user queries with the most similar question in a dataset.
+This repository contains:
+- A working baseline AI model (original/)
+- 10 intentionally broken versions (buggy_versions/)
 
-## How it works
-- Questions are encoded using Sentence Transformers
-- User input is compared using cosine similarity
-- The closest match is returned as the answer
+Each bug demonstrates a different failure case:
+- synonym issues
+- paraphrasing
+- ambiguity
+- adversarial inputs
+- etc.
 
-## Files
-- app.py: Main application
-- model.py: Embedding and similarity logic
-- preprocessing.py: Input cleaning
-- data.json: Dataset
-
-## How to run
-1. Install dependencies:
-   pip install -r requirements.txt
-
-2. Run the app:
-   python app.py
+These bugs were analyzed using Generative AI to understand model weaknesses and improvements.
